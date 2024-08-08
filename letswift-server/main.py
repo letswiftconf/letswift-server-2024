@@ -5,8 +5,8 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.exceptions import RequestValidationError
 from typing import List
 
-from model import SocialLinks, Sponsor, Organizer, Speaker, Session, FAQ
-from data import sponsors, organizers, speakers, sessions, faqs
+from model import SocialLinks, Sponsor, Organizer, Speaker, Session, FAQ, Banner
+from data import sponsors, organizers, speakers, sessions, faqs, banners
 
 app = FastAPI()
 
@@ -47,6 +47,10 @@ async def get_schedule():
 @app.get("/faq", response_model=List[FAQ])
 async def get_faqs():
     return faqs
+
+@app.get("/banner", response_model=List[Banner])
+async def get_banners():
+    return banners
 
 # Run the app
 if __name__ == "__main__":

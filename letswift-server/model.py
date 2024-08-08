@@ -59,3 +59,11 @@ class FAQ(BaseModel):
     a: str
     q_en: str
     a_en: str
+
+class Banner(BaseModel):
+    id: str
+    image_name: str
+    image_url: str
+    text: str
+    url: str
+    is_active: bool

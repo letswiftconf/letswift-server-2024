@@ -1,4 +1,4 @@
-from model import SocialLinks, Sponsor, Organizer, Speaker, Session, FAQ
+from model import SocialLinks, Sponsor, Organizer, Speaker, Session, FAQ, Banner
 
 # Data
 sponsors = [
@@ -928,4 +928,15 @@ faqs = [
         q_en="What is the cancellation policy EN?",
         a_en="If you need to cancel your registration, please refer to our cancellation policy on the website EN."
     )
+]
+
+banners = [
+    Banner(
+        id="1",
+        image_name="banner1.png",
+        image_url="https://via.placeholder.com/150",
+        text="Banner 1 description",
+        url="https://www.banner1.com",
+        is_active=True
+    ),
 ]
