@@ -45,6 +45,8 @@ class Session(BaseModel):
     name: str
     name_en: str
     type: str  # opening, ending, event, networking, workshop, presentation, lunch, recess, photo
+    track: str
+    track_en: str
     venue: str
     venue_en: str
     speaker: Speaker
