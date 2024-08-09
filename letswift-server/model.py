@@ -49,7 +49,7 @@ class Session(BaseModel):
     venue_en: str
     speaker: Speaker
     start_time: str
-    duration: str
+    duration: int
     end_time: str
     keynote_url: str
     video_url: str
